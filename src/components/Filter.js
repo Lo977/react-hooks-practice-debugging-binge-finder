@@ -1,13 +1,10 @@
 import React from "react";
 
-function Filter(props) {
+function Filter({ handleFilter }) {
   return (
     <div>
       <h4> Filter By Rating </h4>
-      <select
-        placeholder="Filter by average rating"
-        onChange={props.handleFilter}
-      >
+      <select placeholder="Filter by average rating" onChange={handleFilter}>
         <option>No Filter</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -22,3 +19,4 @@ function Filter(props) {
     </div>
   );
 }
+export default Filter;
